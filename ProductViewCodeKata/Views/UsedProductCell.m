@@ -10,14 +10,8 @@
 
 @implementation UsedProductCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)configureWithProduct:(id<Product>)product {
+    self.nameLbl.text = product.name;
+    self.priceLbl.text = [product.price description];
 }
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 @end

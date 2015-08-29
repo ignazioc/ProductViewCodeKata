@@ -14,6 +14,11 @@
 		EE70A99C1B91EFAB00D6D705 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70A99B1B91EFAB00D6D705 /* Images.xcassets */; };
 		EE70A99F1B91EFAB00D6D705 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE70A99D1B91EFAB00D6D705 /* LaunchScreen.xib */; };
 		EE70A9AB1B91EFAB00D6D705 /* ProductViewCodeKataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE70A9AA1B91EFAB00D6D705 /* ProductViewCodeKataTests.m */; };
+		EE70A9B71B91F75000D6D705 /* BaseProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE70A9B61B91F75000D6D705 /* BaseProductCell.m */; };
+		EE70A9BA1B91F89500D6D705 /* UsedProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE70A9B91B91F89500D6D705 /* UsedProductCell.m */; };
+		EE70A9BF1B91FC7B00D6D705 /* Notebook.m in Sources */ = {isa = PBXBuildFile; fileRef = EE70A9BE1B91FC7B00D6D705 /* Notebook.m */; };
+		EE70A9C21B91FC8700D6D705 /* SecondHand.m in Sources */ = {isa = PBXBuildFile; fileRef = EE70A9C11B91FC8700D6D705 /* SecondHand.m */; };
+		EE70A9C51B91FD4A00D6D705 /* ProductFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EE70A9C41B91FD4A00D6D705 /* ProductFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,18 @@
 		EE70A9A41B91EFAB00D6D705 /* ProductViewCodeKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductViewCodeKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70A9A91B91EFAB00D6D705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE70A9AA1B91EFAB00D6D705 /* ProductViewCodeKataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductViewCodeKataTests.m; sourceTree = "<group>"; };
+		EE70A9B51B91F75000D6D705 /* BaseProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProductCell.h; sourceTree = "<group>"; };
+		EE70A9B61B91F75000D6D705 /* BaseProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseProductCell.m; sourceTree = "<group>"; };
+		EE70A9B81B91F89500D6D705 /* UsedProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsedProductCell.h; sourceTree = "<group>"; };
+		EE70A9B91B91F89500D6D705 /* UsedProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsedProductCell.m; sourceTree = "<group>"; };
+		EE70A9BC1B91FC4600D6D705 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		EE70A9BD1B91FC7B00D6D705 /* Notebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notebook.h; sourceTree = "<group>"; };
+		EE70A9BE1B91FC7B00D6D705 /* Notebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notebook.m; sourceTree = "<group>"; };
+		EE70A9C01B91FC8700D6D705 /* SecondHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondHand.h; sourceTree = "<group>"; };
+		EE70A9C11B91FC8700D6D705 /* SecondHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondHand.m; sourceTree = "<group>"; };
+		EE70A9C31B91FD4A00D6D705 /* ProductFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFactory.h; sourceTree = "<group>"; };
+		EE70A9C41B91FD4A00D6D705 /* ProductFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFactory.m; sourceTree = "<group>"; };
+		EE70A9C61B92009A00D6D705 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +98,8 @@
 		EE70A98D1B91EFAB00D6D705 /* ProductViewCodeKata */ = {
 			isa = PBXGroup;
 			children = (
+				EE70A9BB1B91FC3100D6D705 /* Models */,
+				EE70A9B41B91F63100D6D705 /* Views */,
 				EE70A9921B91EFAB00D6D705 /* AppDelegate.h */,
 				EE70A9931B91EFAB00D6D705 /* AppDelegate.m */,
 				EE70A9951B91EFAB00D6D705 /* ViewController.h */,
@@ -117,6 +136,32 @@
 				EE70A9A91B91EFAB00D6D705 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE70A9B41B91F63100D6D705 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE70A9C61B92009A00D6D705 /* ProductCell.h */,
+				EE70A9B51B91F75000D6D705 /* BaseProductCell.h */,
+				EE70A9B61B91F75000D6D705 /* BaseProductCell.m */,
+				EE70A9B81B91F89500D6D705 /* UsedProductCell.h */,
+				EE70A9B91B91F89500D6D705 /* UsedProductCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE70A9BB1B91FC3100D6D705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE70A9BC1B91FC4600D6D705 /* Product.h */,
+				EE70A9BD1B91FC7B00D6D705 /* Notebook.h */,
+				EE70A9BE1B91FC7B00D6D705 /* Notebook.m */,
+				EE70A9C01B91FC8700D6D705 /* SecondHand.h */,
+				EE70A9C11B91FC8700D6D705 /* SecondHand.m */,
+				EE70A9C31B91FD4A00D6D705 /* ProductFactory.h */,
+				EE70A9C41B91FD4A00D6D705 /* ProductFactory.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE70A9B71B91F75000D6D705 /* BaseProductCell.m in Sources */,
+				EE70A9BA1B91F89500D6D705 /* UsedProductCell.m in Sources */,
+				EE70A9BF1B91FC7B00D6D705 /* Notebook.m in Sources */,
 				EE70A9971B91EFAB00D6D705 /* ViewController.m in Sources */,
+				EE70A9C51B91FD4A00D6D705 /* ProductFactory.m in Sources */,
+				EE70A9C21B91FC8700D6D705 /* SecondHand.m in Sources */,
 				EE70A9941B91EFAB00D6D705 /* AppDelegate.m in Sources */,
 				EE70A9911B91EFAB00D6D705 /* main.m in Sources */,
 			);

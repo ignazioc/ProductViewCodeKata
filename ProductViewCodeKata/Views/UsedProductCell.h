@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProductCell.h"
 
-@interface UsedProductCell : UITableViewCell
+
+@interface UsedProductCell : UITableViewCell <ProductCell>
+@property (weak, nonatomic) IBOutlet UILabel *nameLbl;
+@property (weak, nonatomic) IBOutlet UILabel *priceLbl;
+@property (weak, nonatomic) IBOutlet UILabel *hasBoxLbl;
 
 @end
