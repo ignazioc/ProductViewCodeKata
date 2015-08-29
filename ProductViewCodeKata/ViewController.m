@@ -10,6 +10,8 @@
 #import "ProductFactory.h"
 #import "ProductCell.h"
 
+#import "Notebook.h"
+
 
 @interface ViewController ()
 @property (nonatomic) NSArray *productList;
@@ -37,8 +39,17 @@
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BaseProductCell" forIndexPath:indexPath];
 
+    id product = self.productList[indexPath.row];
+
+    UITableViewCell *cell = nil;
+
+    //THIS IS WRONG! :)
+    if ([product isKindOfClass:[Notebook class]]) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"BaseProductCell" forIndexPath:indexPath];
+    } else {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"UsedProductCell" forIndexPath:indexPath];
+    }
 
     [(id<ProductCell>)cell configureWithProduct:self.productList[indexPath.row]];
 
@@ -52,7 +63,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
+    return 100;
 }
 
 
